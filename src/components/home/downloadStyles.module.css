@@ -1,0 +1,99 @@
+.container {
+    border-radius: 10px;
+    /*-webkit-box-shadow: 3px 3px 5px 3px #ccc;*/
+    /*-moz-box-shadow:    3px 3px 5px 3px #ccc;*/
+    /*box-shadow:         3px 3px 5px 3px #ccc;*/
+    height: 60%;
+    width: 90vw;
+    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloadButtonContainer {
+    border-radius: 5px;
+    height: 3rem;
+    width: 15rem;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.downloadALink {
+    cursor: pointer;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 3rem;
+    border-right: 1px solid #eee;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.5s all;
+}
+.downloadALink:hover {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #9155cd;
+}
+.downloadButton{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Source Code Pro", monospace;
+}
+.copy {
+    cursor: pointer;
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+}
+.copy:hover{
+    background-color: #9155cd;
+}
+.copyIcon {
+    align-self: center;
+}
+.cautionText {
+    color: #666666;
+    margin: 4rem 0 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+.copied {
+    position: fixed;
+    font-family: 'Source Code Pro', monospace;
+    margin: 2rem 0 0 0;
+    border: 1px solid limegreen;
+    color: limegreen;
+    padding: 0.5rem;
+    border-radius: 50px;
+    animation: copied;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.checkIcon {
+    margin-top: 3px;
+    margin-bottom: auto;
+}
+
+@keyframes copied {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@media only screen and (max-width: 768px) {
+    .cautionText {
+        text-align: center;
+    }
+}

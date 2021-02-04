@@ -1,0 +1,191 @@
+:root {
+    --pink-color: #ff66c4;
+    --main-color: #663399;
+    --main-color-light: #9155cd;
+    --main-font: 'Kanit', sans-serif;
+}
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+.homeNavBarContainer {
+    /*border: 2px solid red;*/
+    width: 100vw;
+    height: 6rem;
+}
+.homeNavBarLogo {
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 1rem;
+    color: var(--main-color);
+}
+.homeNavBarLogoLineOne {
+    /*color: #d4e542;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    margin-bottom: -3px;
+}
+.homeNavBarLogoLineTwo {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}
+.homeNavBarLogoLineTwoPartOne {
+    /*color: var(--pink-color);*/
+}
+.homeNavBarLogoLineTwoPartTwo {
+    /*color: var(--main-color);*/
+}
+.homeBody {
+    margin: 0 auto 0 auto;
+    padding: 2rem 0 0 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.homeDescription {
+    margin: 2rem 0 0 0;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+    font-weight: 700;
+    /*font-weight: 700;*/
+}
+.homeDescription:after {
+    content: ".";
+    color: black;
+}
+.homeBodyGreyDescription {
+    margin: 1rem 0 0 0;
+    color: #666;
+    font-family: "Source Code Pro", monospace;
+}
+.homeUrlTextField {
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-size: 16px;
+    font-family: var(--main-font);
+    padding: 0.5rem 0.5rem;
+    background-color: #fff;
+    border: 2px solid grey;
+    border-radius: 4px;
+    transition: 0.5s all;
+}
+.homeUrlTextField:focus {
+    border-color: var(--main-color);
+}
+.homeButtonsContainer {
+    /*border: 2px solid red;*/
+    height: 4rem;
+    display: flex;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.errorMessage {
+    font-weight: 700;
+    margin: 5px 0 0 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #920303;
+    font-size: 12px;
+    align-self: flex-start;
+}
+.homeConvertButton {
+    box-shadow: 3px 3px 5px 3px #ccc;
+    outline: none;
+    text-decoration: none;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 4px;
+    height: 2.5rem;
+    color: #eee;
+    width: 10rem;
+    transition: 0.5s all;
+}
+.homeConvertButton:hover {
+    background-color: #9155cd;
+    color: #fff;
+}
+.homeFooter {
+    width: 100vw;
+    margin-top: auto;
+    height: 15%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footerContent {
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.developedByText {
+    color: #ddd;
+    font-family: 'Source Code Pro', monospace;
+}
+.developerName {
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media only screen and (max-width: 768px) {
+    .homeButtonsContainer {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .homeConvertButton {
+        height: 3rem;
+        width: 15rem;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    .homeUrlTextField {
+        height: 2rem;
+        width: 80vw;
+    }
+    .homeDescription {
+        word-wrap: break-word;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .errorMessage {
+        margin-left: 2rem;
+    }
+    .homeBodyGreyDescription {
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .homeFooter {
+        height: 10%;
+    }
+    .footerContent {
+        margin-right: 1rem;
+    }
+}
