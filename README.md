@@ -1,4 +1,4 @@
-# Backend Application for ***twitter-thread-cloner***
+# Frontend Application for ***twitter-thread-cloner***
 
 
 ## About Twitter-Thread-Cloner
