@@ -15,7 +15,7 @@ const url_pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
 const production = true;
 
 const Home = () => {
-    const domain = (production)?"http://twittertcloner.ddns.net:4000/":"http://localhost:4000/";
+    const domain = (production)?"http://ec2-3-94-79-211.compute-1.amazonaws.com:4000/":"http://localhost:4000/";
     const [url, setUrl] = useState("");
     const [loading, setLoading] = useState(false);
     const [downloadLink, setDownloadLink] = useState(false);
